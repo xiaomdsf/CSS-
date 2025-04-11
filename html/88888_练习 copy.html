@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清除浮动实例</title>
+    <style>
+        /* 浮动元素样式 */
+        .float-box {
+            float: left;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: lightblue;
+        }
+
+        /* 方法 1: 使用额外的清除元素 */
+        .clear-element {
+            clear: both;
+        }
+
+        /* 方法 2: 使用 clearfix */
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* 方法 3: 使用 overflow */
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+        /* 方法 4: 使用 display: flow-root */
+        .flow-root {
+            display: flow-root;
+        }
+    </style>
+</head>
+<body>
+    <h1>清除浮动的实例</h1>
+
+    <!-- 方法 1: 使用额外的清除元素 -->
+    <h2>方法 1: 使用额外的清除元素</h2>
+    <div>
+        <div class="float-box"></div>
+        <div class="float-box"></div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <!-- 方法 2: 使用 clearfix -->
+    <h2>方法 2: 使用 clearfix</h2>
+    <div class="clearfix">
+        <div class="float-box"></div>
+        <div class="float-box"></div>
+    </div>
+
+    <!-- 方法 3: 使用 overflow -->
+    <h2>方法 3: 使用 overflow</h2>
+    <div class="overflow-hidden">
+        <div class="float-box"></div>
+        <div class="float-box"></div>
+    </div>
+
+    <!-- 方法 4: 使用 display: flow-root -->
+    <h2>方法 4: 使用 display: flow-root</h2>
+    <div class="flow-root">
+        <div class="float-box"></div>
+        <div class="float-box"></div>
+    </div>
+</body>
+</html>

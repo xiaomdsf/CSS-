@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 1400px;
+        margin: 0 auto;
+      }
+      .header {
+        background-color: aqua;
+        height: 80px;
+      }
+      .nav {
+        background-color: aquamarine;
+        height: 80px;
+        margin-top: 10px;
+      }
+      .main {
+        margin-top: 10px;
+        /* 清除浮动 */
+        overflow: hidden; 
+      }
+      .article {
+        float: left;
+        width: 900px;
+        background-color: aquamarine;
+        height: 600px;
+      }
+      .section1 {
+        background-color: aqua;
+        height: 200px;
+      }
+      .section {
+        background-color:  aquamarine;
+        height: 400px;
+      }
+      .sidebar {
+        float: right;
+        width: 480px;
+        background-color: aquamarine;
+        height: 600px;
+      }
+      .footer {
+        margin-top: 20px;
+        background-color: aqua;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">页面头部</div>
+      <div class="nav">导航</div>
+      <div class="main">
+        <div class="article">
+          <div class="section1">文章内容1</div>
+          <div class="section">文章内容</div>
+        </div>
+        <div class="sidebar">右侧内容</div>
+      </div>
+      <div class="footer">底部</div>
+    </div>
+  </body>
+</html>

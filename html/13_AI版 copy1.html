@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>棠的博客</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      .head {
+      }
+      .blog-list {
+        /* 去点 */
+        list-style: none;
+        color: #007bff;
+        margin: 0 auto;
+        max-width: 800px;
+      }
+      .blog-list li {
+        margin: 20px;
+        padding: 20px 20px;
+        /* 边框弧度 */
+        border-radius: 10px;
+        border: 1px solid #ddd;
+      }
+      .blog-list li h3 {
+        font-size: 24px;
+        margin: 0 0 10px;
+      }
+      .blog-list li p {
+        color: #555;
+        /* 多于字体省略号显示 */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .blog-list li a {
+        /* a是行内元素，不能设置宽高 转行内块 */
+        display: inline-block;
+        background-color: #007bff;
+        color: #ffffff;
+        /* 去掉下划线 */
+        text-decoration: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+      }
+      .blog-list li a:hover {
+        background-color: #0056b3;
+        /* transform: scale(4);  悬停或其他状态下对元素进行缩放*/
+      }
+      .blog-list li:hover {
+        /* 为元素添加阴影效果 */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transform: translateY(-5px);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>博客列表</h1>
+    <div class="head">
+      <ul class="blog-list">
+        <li>
+          <h3>30岁，我开启了人生副业</h3>
+          <p>
+            大家好，我是朽木白，一名非常普通的前端程序员，在前端这条路上淌七年的浑水，毫无建树。在互联网泡沫的末法时代，不得已换了一份工作，自降6k去了一家教育公司，由于个人原因，在今年的三月份我决定辞职。当时辞职后的第一想法是再换个公司继续干前端，正好是金三银四，可能行情好一点。
+          </p>
+          <a href="">阅读更多</a>
+        </li>
+        <li>
+          <h3>如何提升编程效率：10 个实用技巧</h3>
+          <p>
+            在这篇文章中，我们将探讨如何通过工具、习惯和技巧来显著提高编程效率，让你在工作中事半功倍。
+          </p>
+          <a href="">阅读更多</a>
+        </li>
+        <li>
+          <h3>AI 编程助手：未来的编程伙伴</h3>
+          <p>
+            随着人工智能技术的发展，AI
+            编程助手正在成为程序员的得力助手。本文将介绍一些流行的 AI
+            编程工具及其应用。
+          </p>
+          <a href="">阅读更多</a>
+        </li>
+        <li>
+          <h3>前端开发的未来：Web3 和去中心化应用</h3>
+          <p>
+            随着区块链技术的发展，Web3 正在改变前端开发的格局。这篇文章将介绍
+            Web3 的基本概念及其对前端开发的影响。
+          </p>
+          <a href="">阅读更多</a>
+        </li>
+        <li>
+          <h3>掌握 CSS Grid：现代布局的终极指南</h3>
+          <p>
+            CSS Grid 是现代网页布局的强大工具。本篇博客将通过实例讲解如何使用
+            CSS Grid 构建响应式布局。
+          </p>
+          <a href="">阅读更多</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

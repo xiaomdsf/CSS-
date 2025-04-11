@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客列表</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* line-height: 1.8; */
+            /* margin: 20px; */
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #444;
+        }
+        .blog-list {
+            list-style: none;
+            /* padding: 0; */
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .blog-item {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .blog-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+        .blog-item h2 {
+            margin: 0 0 10px;
+            color: #007BFF;
+            font-size: 1.5em;
+        }
+        .blog-item p {
+            margin: 0 0 15px;
+            color: #555;
+            font-size: 1em;
+        }
+        .blog-item a {
+            display: inline-block;
+            padding: 8px 12px;
+            color: #fff;
+            background-color: #007BFF;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9em;
+            transition: background-color 0.2s;
+        }
+        .blog-item a:hover {
+            background-color: #0056b3;
+        }
+        .blog-item p{
+            color: #555;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <h1>博客列表</h1>
+    <ul class="blog-list">
+        <li class="blog-item">
+            <h2>如何提升编程效率：10 个实用技巧</h2>
+            <p>在这篇文章中，我们将探讨如何通过工具、习惯和技巧来显著提高编程效率，让你在工作中事半功倍。</p>
+            <a href="https://example.com/blog1" target="_blank">阅读更多</a>
+        </li>
+        <li class="blog-item">
+            <h2>深入理解 JavaScript 异步编程</h2>
+            <p>异步编程是 JavaScript 的核心特性之一。本篇博客将带你深入了解 Promise、async/await 和事件循环的工作原理。</p>
+            <a href="https://example.com/blog2" target="_blank">阅读更多</a>
+        </li>
+        <li class="blog-item">
+            <h2>前端开发的未来：Web3 和去中心化应用</h2>
+            <p>随着区块链技术的发展，Web3 正在改变前端开发的格局。这篇文章将介绍 Web3 的基本概念及其对前端开发的影响。</p>
+            <a href="https://example.com/blog3" target="_blank">阅读更多</a>
+        </li>
+        <li class="blog-item">
+            <h2>掌握 CSS Grid：现代布局的终极指南</h2>
+            <p>CSS Grid 是现代网页布局的强大工具。本篇博客将通过实例讲解如何使用 CSS Grid 构建响应式布局。</p>
+            <a href="https://example.com/blog4" target="_blank">阅读更多</a>
+        </li>
+    </ul>
+</body>
+</html>
