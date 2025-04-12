@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 通配符：初始化 */
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        /* 元素选择器（共性）：div p span a img body等 */
+        p{
+            color: red;
+            font-size: 20px;
+        }
+        /* 类选择器：.  可以被多种标签使用 */
+        .oneclass{
+            color: blue;
+            font-size: 30px;
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+        }
+        .spantext{
+            color: green;
+            font-size: 40px;
+            background-color: pink;
+        }
+        .td{
+            font-weight: 700;
+        }
+        /* ID选择器：# 只能被一个标签使用 */
+        #title{
+            color: purple;
+            font-size: 50px;
+            background-color: orange;
+        }
+        /* 合并选择器  提取相同的 减少重复代码 */
+        .box1, .box2{
+            width: 100px;
+            height: 100px;
+        }
+        .box1{
+            /* width: 100px;
+            height: 100px; */
+            background-color: red;
+        }
+        .box2{
+            /* width: 100px;
+            height: 100px; */
+            background-color: blue;
+        }
+        /* 选择器优先级：内联>ID选择器（#id）>类选择器（.class）>元素选择器（div/p/h1-6） */
+    </style>
+</head>
+<body>
+    <p>hello</p>
+    <h2 class="oneclass">我是一个盒子</h2>
+    <h2 class="oneclass">我是一个盒子</h2>
+    <span class="spantext td">我是span</span>
+    <h3 id="title">大王叫我来巡山啊</h3>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

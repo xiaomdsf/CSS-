@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            /* 相对定位 不脱离文档流 */
+            position: relative;
+            left: 0px;
+            top: 0px;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <!-- 三种定位：relative（相对）、absolute（绝对）、fixed（固定） -->
+    <!-- 绝对定位和固定定位会脱离文档流 -->
+     <div class="box"></div>
+     <div class="box1"></div>
+</body>
+</html>

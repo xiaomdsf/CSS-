@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 绝对定位：相对于父级元素进行定位，父级元素必须存在定位。如果不存在，则逐级向上寻找具有定位的元素。
+      如果都没有，则相对于浏览器窗口进行定位。
+      */
+      .container {
+        width: 300px;
+        height: 300px;
+        border: 1px solid #000;
+        margin: 100px;
+        /* 父级元素没有定位，在网上找 */
+
+        /* 给父级设置定位 */
+        position: relative;
+        /* 解决子元素绝对定位的问题 */
+      }
+      .box1 {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        position: absolute;
+        /* 绝对定位：相对于父级元素进行定位，父级元素有限制 */
+        left: 100px;
+        top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1"></div>
+    </div>
+  </body>
+</html>

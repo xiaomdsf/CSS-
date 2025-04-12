@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* :first-chile 选择器 */
+        ul li:first-child{
+            color: red;
+        }
+        /* :last-child 选择器 */
+        ul li:last-child{
+            color: blue;
+        }
+        .box p:last-child{
+            color: green;
+        }
+        /* :nth-child()选择器  n为父元素内第几个元素 n可以是数字/一个关键词(even(偶数)/odd(奇数))*/
+        /* ol li:nth-child(2){
+            color:aquamarine;
+        } */
+        ol li:nth-child(even){
+            color:beige
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>列表3</li>
+    </ul>
+
+    <div class="box">
+        <p>第1段落</p>
+        <p>第2段落</p>
+        <p>第3段落</p>
+    </div>
+    <ol>
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>列表3</li>
+    </ol>
+</body>
+</html>

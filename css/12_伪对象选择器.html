@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>伪元素</title>
+    <style>
+      /* ul li::before{
+            content:'我在前面';
+            color:aqua;
+        }
+        ul li::after{
+            content:'我在后面';
+            color:blue;
+        } */
+
+      ul::before {
+        content: "我在前面";
+        color: aqua;
+      }
+      ul::after {
+        content: "我在后面";
+        color: blue;
+      }
+      p::before {
+        content: "|";
+        color: rosybrown;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>列表1</li>
+      <li>列表2</li>
+      <li>列表3</li>
+    </ul>
+    <p>新闻图片</p>
+  </body>
+</html>

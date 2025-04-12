@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 必须按照固定顺序写 -->
+    <style>
+      /* 超链接点击之前(只能在a标签使用) */
+      a:link {
+        color: rgb(57, 194, 84);
+      }
+      /* 点击之后 (只能在a标签使用)*/
+      a:visited {
+        color: brown;
+      }
+      /* 悬停 */
+      a:hover {
+        color: aquamarine;
+      }
+      /* 激活 点击后不放 */
+      a:active {
+        color: blanchedalmond;
+      }
+      .box {
+        width: 101px;
+        height: 101px;
+        background-color: antiquewhite;
+      }
+      .box:hover {
+        background-color: cadetblue;
+      }
+      .box:active{
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="http://baidu.com" target="_blank">百度</a>
+    <a href="http://niying.com">必应</a>
+    <a href="http://niying.com">搜素</a>
+    <div class="box"></div>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 相对定位：相对于父级元素进行定位，父级元素没有限制 */
+      .container {
+        width: 300px;
+        height: 300px;
+        border: 1px solid #000;
+        margin: 100px;
+      }
+      .box1 {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        position: relative;
+        left: 100px;
+        top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1"></div>
+    </div>
+  </body>
+</html>

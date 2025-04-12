@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 1px solid #000;
+        margin: 0 auto;
+        /* 超出部分不显示 */
+        /* overflow: hidden; */
+
+        /* 超出部分滚动显示 */
+        /* overflow: scroll; */
+
+        /*自动挡  */
+        /* overflow: auto; */
+        overflow: hidden;
+
+         /* 不换行*/
+        white-space: nowrap;
+
+         /* 文字溢出省略号 */
+        text-overflow: ellipsis;
+       
+      }
+      p {
+        /* 字符间距 */
+        letter-spacing: 8px;
+
+        /* 设置元素透明的 opacity 0-1 1完全不透明 */
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <p>
+        Electron 作为将 Web
+        技术带入桌面应用领域的先驱框架，让无数开发者能够使用熟悉的 HTML、CSS 和
+        JavaScript 构建跨平台应用。然而，随着应用规模的扩大，Electron
+        应用的性能问题逐渐显现——内存占用高、启动速度慢、安装包体积庞大，这些都成为了用户体验的绊脚石。不过，现在有了
+        PakePlus，这些烦恼都将迎刃而解。
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+      .box{
+        width: 400px;
+        height: 200px;
+        border: 8px solid #000;
+        /* 行高  代表在盒子里的元素行高 (但是目前并没有居中 加上*去掉默认值即可) */
+        /* 垂直居中 */
+        line-height: 200px;
+
+      }
+      p {
+        /* 字符间距 */
+        letter-spacing: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <p>我是字符间距</p>
+      <!-- 若两行则 不能做到垂直居中 -->
+    </div>
+  </body>
+</html>

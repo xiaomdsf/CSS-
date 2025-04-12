@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 后代选择器 */
+        ul li{
+            color: red;
+        }
+        /* 子代选择器 */
+        .box > a {
+            color: brown;
+            text-decoration: none;
+        }
+        /* 相邻兄弟元素(同级关系) */
+        h1 + p {
+            color: blue;
+        }
+        /* 通用兄弟选择器 作用于之后的所有元素(同级) */
+        h1 ~ p {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>无序列表第1元素</li>
+        <li>无序列表第2元素</li>
+        <li>无序列表第3元素</li>
+    </ul>
+    <ol>
+        <li>有序列表第1元素</li>
+        <li>有序列表第2元素</li>
+        <li>有序列表第3元素</li>
+    </ol>
+    <div class="box">
+        <a href="">直接子元素</a>
+        <p><a href="">不直接</a></p>
+        <a href="">直接子元素</a>
+    </div>
+    <h1>h1元素</h1>
+    <p>和h1相邻的</p>
+    <p>和h1不相邻的</p>
+</body>
+</html>
