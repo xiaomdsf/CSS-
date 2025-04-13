@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1.加法运算符
+        var num = 10;
+        var num2 = 20;
+        console.log(num + num2); // 30
+        console.log(true+false); //
+        // 2.字符串拼接
+        var str = "Hello";
+        var str2 = "World";
+        console.log(str+str2);
+        
+        //字符串与任何类型相加，都会转换为字符串
+        console.log(str + num); // Hello10
+
+
+        //3. 乘除法运算符
+        console.log(num * num2); // 200
+
+
+        // 4. 取余运算符
+        var num3 = 15;
+        var num4 = 4;
+        console.log(num3 % num4); //3
+
+        // 5. 自增自减运算符
+        // 自增运算符（++）和自减运算符（--）可以用在变量前面或后面
+        //++在前先加再运算
+        // ++在后先运算再加
+        var a = 5;
+        console.log(a++); // 5 (先使用后加1)
+        console.log(a); // 6 (现在a的值是6)
+        console.log(++a); // 7 (先加1后使用)
+        console.log(a--); // 7 (先使用后减1)
+        console.log(a); // 6 (现在a的值是6)
+        console.log(--a); // 5 (先减1后使用)
+        console.log(a); // 5 (现在a的值是5)
+    </script>   
+</body>
+</html>

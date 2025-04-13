@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1.自动抓换
+        var num = 10;
+        var str = 'hjk';
+
+        // num先进行自动类型转换为字符串，然后在进行运算
+        console.log(num + str); // 10hjk
+
+        var str1 = 'leo'
+        // str1先进行自动类型转换为布尔值，然后在进行运算
+        console.log(!str1)
+
+
+        // 2.强制转换
+        // 一、Number()：将值转换为数字类型
+        // Number
+        console.log(typeof(Number('abc')))
+        // NAN
+        console.log(Number('abc'))
+        // 123
+        console.log(Number('123'))
+        //0
+        console.log(Number(''))
+        // 二、String()：将值转换为字符串类型
+        console.log(typeof(String(123))) // string
+        console.log(typeof(String(undefined)))
+
+        // 三、Boolean()：将值转换为布尔类型
+        console.log(typeof(Boolean(123))) // boolean
+
+    </script>
+</body>
+</html>

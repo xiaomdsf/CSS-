@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1.if语句
+        /**
+         *  if(布尔值){
+         *      语句;
+         * } else if(布尔值){
+         *     语句;
+         * }else{
+         *    语句;}
+         */
+        var num = 11;
+        if(num == 10){
+            console.log("num等于10"); // num等于10
+        }else{
+            console.log("num不等于10"); // num不等于10
+        }
+
+        // 二、switch语句
+        /*
+           switch(表达式){
+               case 值1:
+                   语句;
+                   break;
+               case 值2:
+                   语句;
+                   break;
+               default:
+                   语句;
+           }
+        */
+    //    判断今天星期几
+        var day = 2;
+        switch(day){
+            case 1 :
+                console.log("今天是星期一"); // 今天是星期一
+                break;
+            case 2 :
+                console.log("今天是星期二"); // 今天是星期二
+                break;
+            case 3 :        
+                console.log("今天是星期三"); // 今天是星期三
+                break;
+            case 4 :
+                console.log("今天是星期四"); // 今天是星期四
+                break;                  
+            case 5 :    
+                console.log("今天是星期五"); // 今天是星期五
+                break;
+            case 6 :
+                console.log("今天是星期六"); // 今天是星期六
+                break;  
+            case 7 :
+                console.log("今天是星期天"); // 今天是星期天
+                break;
+            default:
+                console.log("输入错误"); // 输入错误    
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 1. break语句：用于终止循环 跳出循环
+      for (var i = 0; i <= 20; i++) {
+        console.log(i);
+        if (i == 12) {
+          console.log("i等于12，跳出循环"); // i等于12，跳出循环
+          break;
+        }
+      }
+
+      // 2. continue语句：用于跳过当前循环的剩余部分，并继续下一次循环。
+      for(var j=0;j<=33;j++){
+        if(j==18){
+            console.log('停止输出18')
+            continue;
+        }
+        console.log(j)
+      }
+
+      // 3. return语句：用于结束函数的执行，并返回一个值。
+
+      // 4. throw语句：用于抛出一个异常。
+
+      // 5. try...catch语句：用于捕获异常并处理它。
+
+      // 6. finally语句：用于在try...catch语句块中执行清理操作。
+    </script>
+  </body>
+</html>

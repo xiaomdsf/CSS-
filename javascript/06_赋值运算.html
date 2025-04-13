@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 1.赋值运算
+      var x = 10;
+      var y;
+      console.log(y); // undefined
+      y = x; // 将x的值赋给y
+      console.log(y); // 10
+
+      // 2.比较运算符
+      var a = 5;
+      var b = 10;
+      console.log(a == b); // false (值相等)
+      console.log(a != b); // true (值不相等)
+
+      //== 比较值  ===比较值和类型
+      var var1 = 5;
+      var var2 = "5"; // 字符串类型
+      console.log(var1 == var2); // true (值相等)
+      console.log(var1 === var2); // false (类型不相等)
+
+      // 取反运算符
+      var isTrue = true;
+      console.log(!isTrue); // false (取反)
+      // 六个取反为true: !undefined, !null, !NaN, !0, !"", !false
+      console.log("=======================");
+      console.log(!undefined);
+      console.log(!null);
+      console.log(!0);
+      console.log(!false);
+      console.log(!"");
+      console.log(!NaN);
+      console.log("==========");
+
+    //   &&运算符
+      var condition1 = true;
+      var condition2 = false;
+      console.log(condition1 && condition2); // false (两个条件都为true时才为true)
+
+      // ||运算符
+      console.log(condition1 || condition2); // true (至少一个条件为true时为true)
+
+      // 3.逻辑运算符
+      var a9 = 5;
+      var b9 = 10;
+      console.log(a9 > 0 && b9 > 0); // true (两个条件都为true)
+      console.log(a9 > 0 || b9 < 0); // true (至少一个条件为true)
+    </script>
+  </body>
+</html>
