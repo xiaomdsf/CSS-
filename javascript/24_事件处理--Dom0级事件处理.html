@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <button id="btn">按钮</button>
+    </div>
+    <script>
+        // 
+        var div = document.querySelector('.container')
+        var bt = document.getElementById('btn');
+        bt.onclick = function(){
+            var pa = document.createElement('p');
+            pa.innerHTML= '我是dom插入的一个p标签';
+            pa.setAttribute('class','passage');
+            div.appendChild(pa)
+        }
+        // 再次添加会覆盖上一个事件
+        bt.onclick =function(){
+            console.log('a');
+        }
+    </script>
+</body>
+</html>

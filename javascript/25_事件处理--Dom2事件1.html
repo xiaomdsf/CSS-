@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <button id="btn">按钮</button>
+    </div>
+    <script>
+      var co = document.querySelector(".container");
+      var bt = document.getElementById("btn");
+      bt.addEventListener("click", addp);
+      bt.addEventListener("click", clickHandler2);
+      function addp() {
+        var os = document.createElement("p");
+        os.innerHTML = "我是dom添加进来了的p标签";
+        os.setAttribute("class", "passage");
+        co.appendChild(os);
+      }
+      function clickHandler2(){
+            console.log('click2');
+        }
+        // 还可以移除
+        bt.removeEventListener("click", clickHandler2)
+    </script>
+  </body>
+</html>

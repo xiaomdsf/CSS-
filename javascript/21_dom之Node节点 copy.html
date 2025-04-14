@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <div class="box"></div>
+    <script>
+      // 在div中插入一个子结点p标签
+      var sft =document.getElementsByClassName('box');
+      console.log(sft);
+      // 创建一个子节点
+      var chd = document.createElement("p")
+      chd.innerHTML = '我是p标签中的内容'
+      chd.setAttribute('class','passage');
+      // 插入子节点
+      sft[0].appendChild(chd)
+    </script>
+</body>
+</html>

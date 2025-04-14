@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box" name="box">属性操作</div>
+    <script>
+
+        // Attribute属性
+
+        var st =document.getElementById("box")
+        console.log(st);
+        // 1.getAttribute 获得
+        console.log(st.getAttribute('name'));
+        // 2.setAttribute 设置
+        st.setAttribute('class','mydiv')
+        console.log(st.getAttribute("class"));
+        // 3.hasAttribute 是否存在
+        console.log(st.hasAttribute('name'));
+        console.log(st.hasAttribute("alige"));
+        // 4.removeAttribute 移除
+        console.log(st.removeAttribute('name'));
+    </script>
+</body>
+</html>

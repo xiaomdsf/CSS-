@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 一、函数的作用 可复用
+
+      // 1.函数的声明
+      // 语法：function 函数名(参数1,参数2,...){语句;}
+      //两数相加
+      var num1 = 100;
+      var num2 = 200;
+      function add(a, b) {
+        if (typeof a === "number" && typeof b === "number") {
+          console.log(a + b);
+        } else {
+          console.log("无法相加，不是数据类型");
+        }
+      }
+      add(num1, num2); // 300
+      add('a',1)
+      //第二种函数创建方式
+      var st = function(){
+        console.log('函数的第二中创建方式');
+      }
+      st();
+
+      //两数相乘
+
+      function chenfa(a,b){
+        console.log(a*b);
+      }
+      chenfa(4,5)
+      //2.函数的返回值
+      function getName(name){
+        return 'hello'+' '+name;
+        console.log('return 后语句不会被执行');
+      }
+      var myname = getName('Tang')
+      console.log(myname);
+    </script>
+  </body>
+</html>

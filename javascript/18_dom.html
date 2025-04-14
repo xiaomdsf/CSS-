@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box ts">Hello Tang</div>
+    <div class="box1 ts">fd</div>
+    <img src="" name="image" alt="">
+    <img src="" name="image" alt="">
+    <h3 id="title"></h3>
+    <script>
+      // document节点 是文档的根节点
+      console.log(document);
+
+      // 一、document获取元素
+
+      //1、document.getElementsByTagName() 搜索HTML标签名，返回符合条件的元素
+      var divs = document.getElementsByTagName("div");
+      console.log(divs[0].innerHTML = 'innerHTML给元素添加内容');
+      console.log(divs[1].innerHTML='我是通过dom添加的内容');
+
+     //2.document.getElementByClassName() 返回一个HTML collection实例，包含所有class名称符合指定条件的元素
+     var elements = document.getElementsByClassName("box")
+     console.log(elements);   
+
+    // 3.document.getElementsByName() 用于选择一个有name属性的HTML
+    var imgs = document.getElementsByName('image');
+    imgs[0].src="../img/089128152bd814096a99249a487e383d.webp"
+    console.log(imgs);
+
+    // 4.document.getElementById() 返回匹配指定的id属性的元素节点
+    var title = document.getElementById('title');
+    title.innerHTML = '我是通过dom添加的标题'
+
+    //5.document.querySelector() 接收一个css选择作为参数
+    // 在css中匹配class(.) 匹配id（#）
+    var tit = document.querySelector("#title"); 
+    var boxt = document.querySelector(".box1");
+    console.log(tit,boxt);
+    
+    var dix = document.querySelector('.ts');
+    console.log(dix);
+    // 5.document,querySelectorAll() 返回所有符合匹配给定选择器的节点
+    var dix1 = document.querySelectorAll(".ts")
+    console.log(dix1);
+    </script>
+  </body>
+</html>

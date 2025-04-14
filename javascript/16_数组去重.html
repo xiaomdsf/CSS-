@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 1.数组去重
+        var arr = [1,2,3,4,5,1,6,5,8,4,54,8];
+        var temp = [];
+        for(var i = 0;i<arr.length;i++ ){
+            if(temp.indexOf(arr[i]) ==-1){
+                temp.push(arr[i]);
+            }
+        }
+        console.log(temp);
+
+        var arr2=[1,2,3,4,5,2,1,6,3,5,8,10]
+        // 数组去重方法
+        function unique(arr){
+            if(!Array.isArray(arr)){
+                console.log('输入参数不是数组');
+                return;
+            }
+            // 去重后的数组存放位置
+            var temp2 = [];
+            for(var j=0;j<arr.length;j++){
+                if(temp2.indexOf(arr[j])==-1){
+                    temp2.push(arr[j])
+                }
+            }
+            console.log(temp2);
+        }
+        unique(arr2)
+    </script>
+</body>
+</html>

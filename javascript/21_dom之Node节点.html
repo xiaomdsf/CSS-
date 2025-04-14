@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="box">
+      <a href="">hello</a>
+      <p>world</p>
+    </div>
+    <div id="container"></div>
+    <script>
+      var div = document.getElementById("box");
+      console.log(div);
+      // Node
+      console.log(div.textContent);
+      div.textContent = "Tang";
+
+      var tt = document.getElementById("container");
+      // 创建节点
+      var o = document.createElement("h1");
+      console.log(o);
+      o.innerHTML = "我是h1标签";
+      o.setAttribute("class", "test");
+    //   插入子节点
+      tt.appendChild(o);
+      //2.appendChild
+    </script>
+  </body>
+</html>

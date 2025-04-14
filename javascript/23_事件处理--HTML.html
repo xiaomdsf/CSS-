@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .passage{
+            font-size: 30px;
+            color:aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="btn" onclick="clickHandler()">按钮</button>
+    </div>
+    <script>
+        var div = document.getElementsByClassName('container');
+        function clickHandler(){
+            console.log('click');
+            var pa =document.createElement("p");
+            pa.innerHTML = '给html添加一个p标签'
+            pa.setAttribute('class','passage');
+            div[0].appendChild(pa);
+        }
+        // 事件处理程序 为页面添加事件
+        
+    </script>
+</body>
+</html>

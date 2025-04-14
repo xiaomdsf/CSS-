@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 一、数组 array 任何类型都可以
+        var arr = [1, 2, 3, 4, 5]; // 数组的定义
+        console.log(arr);
+        var arr1 =[];
+        arr1[0] = 1;
+        arr1[1] = 2;
+        console.log(arr1);
+
+        arr2 = ['ikh',undefined,null,true,1.2,{}]; // 数组的定义
+        console.log(arr2); // ['ikh',undefined,null,true,1.2,{}]
+
+        // 二、数组的长度 length
+        console.log(arr.length); // 5
+        console.log(arr2.length); // 6  
+
+        // 三、数组的索引 0开始 读取某个数组元素 通过下标访问
+        console.log(arr[0]); // 1
+
+
+
+
+        console.log("=========");
+        // 通过循环遍历数组 for
+        for(var i =0; i<arr.length;i++){
+            console.log(arr[i]);
+        }
+        //while
+        var j = 0;
+        while(j<arr1.length){
+            console.log(arr[j]);
+            j++;
+        }
+
+        
+    </script>
+</body>
+</html>

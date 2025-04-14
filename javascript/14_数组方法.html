@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [1,2,3,4];
+        console.log(typeof arr); // object
+        //1. Array.isArray 判断是否 是数组
+        console.log(Array.isArray(arr));
+
+        var str1 = 'hello world';
+        console.log(Array.isArray(str1)); // false
+
+        // 2.push（）方法 向数组末尾添加元素，返回数组的长度，会改变原数组
+        var arr1 = [1,2,3,4];
+        console.log(arr1.push(8));
+        console.log(arr1.push(9));
+        console.log(arr1);
+
+        //3.pop()方法 删除数组的最后一个元素，并返回删除的元素，改变原数组
+        var arr2 =[5,8,9,6,10];
+        console.log(arr2.pop());
+        console.log(arr2);
+
+        // 4.join()方法 以指定的参数作为分隔符，将所有数组成员连接为一个字符串返回，不改变原数组
+        var arr3 = [8,9,10,11];
+        console.log(arr3.join('|')); // 8,9,10,11
+        console.log(typeof arr3);
+        //如果是null或undefined会被转换为空字符串
+        var arr4 = [null,undefined,true,false,1.2];
+        console.log(arr4.join('--'));
+
+        // 5. concat()方法 连接两个或多个数组，返回新数组，不改变原数组
+        var arr5 = [1,2,3];
+        var arr6 = [4,5,6];
+        console.log(arr5.concat(arr6,arr)); // [1,2,3,4,5,6]
+
+        // 6.slice()方法 返回一个新数组，包含从原数组中提取的部分元素，不改变原数组
+        var arr7 = [1,2,3,4,5,6];
+        console.log(arr7.slice(0,4));//[1,2,3,4]
+
+    </script>
+</body>
+</html>

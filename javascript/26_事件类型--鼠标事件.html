@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+        }
+    </style>
+  </head>
+  <body>
+    <button id="btn">按钮</button>
+    <div id="box"></div>
+    <script>
+      var bt = document.getElementById("btn");
+      // 鼠标事件
+      //1.click：按下鼠标键时触发
+    //   bt.onclick = function(){
+    //       alert("被点击")
+    //   }
+
+    // 2.onmousedown:鼠标按下了
+    //   bt.onmousedown = function () {
+    //     alert("鼠标按下了");
+    //   };
+
+
+    // 3.onmouseup：鼠标抬起时触发
+    // bt.onmouseup =function(){
+    //     alert('鼠标抬起时触发');
+    // }
+
+//    // 4.onmousemove:鼠标滑动就执行
+      var bx = document.getElementById('box')
+//     bx.onmousemove =function(){
+//         // bx.style.cssText="background-color:yellow"
+//         console.log('click');
+//     }
+
+        //5.onmouseover:鼠标移入了
+        // bx.onmousemove = function(){
+        //     console.log('鼠标移入了');
+        // }
+
+        // 6.onmouseout：鼠标移除
+        bx.onmouseout = function(){
+            console.log("鼠标移除了");
+        }
+
+    </script>
+  </body>
+</html>

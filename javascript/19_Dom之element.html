@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="box" class="ts">hello Box</div>
+    <script>
+      // 一、Element 对象
+
+      // 1、Element.id
+      var t = document.querySelector("div");
+      console.log(t);
+
+      console.log(t.id);
+      t.id = "mybox";
+
+      //
+      // 2、Element.className()
+      console.log(t.className);
+      t.className = "tiantiankaixin ts";
+
+      //3、Element.classList
+      //add() 增加一个class
+      // remove() 移除一个class
+      t.classList.add("tttt");
+      t.classList.remove("tiantiankaixin");
+      //4.element.innerHTML
+      console.log(t.innerHTML);
+      t.innerHTML = "写入新的内容";
+      console.log(t.innerHTML);
+      //   5.element.innerText
+      console.log(t.innerText);
+      t.innerText = "innerText写入的";
+
+      // innnerText 操作纯文本，不识别html标签
+      t.innerHTML = '<a href="www:baidu.com"> 百度</a>';
+      // t.innerText = '<a href="www:baidu.com"> 百度</a>'
+    </script>
+  </body>
+</html>

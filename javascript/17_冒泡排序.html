@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 冒泡排序
+      var arr = [5, 1, 4, 2, 8, 10, 7];
+      // 思路:想要这组数据从小到大排列,两两比较,交换位置
+      for (var j = 0; j < arr.length - 1; j++) {
+        for (var i = 0; i < arr.length - 1 - j; i++) {
+          if (arr[i] > arr[i + 1]) {
+            var t = arr[i];
+            arr[i] = arr[i + 1];
+            arr[i + 1] = t;
+          }
+        }
+      }
+      console.log(arr);
+    </script>
+  </body>
+</html>

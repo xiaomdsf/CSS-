@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <button id="btn">按钮</button>
+    </div>
+    <script>
+        var bt = document.getElementById('btn');
+        // bt.addEventListener("click",function(){
+        //     console.log("click");
+        // })
+        bt.addEventListener('click',clickHandler)
+        bt.addEventListener('click',clickHandler2)
+        function clickHandler(){
+            console.log('click');
+        }
+        function clickHandler2(){
+            console.log('click2');
+        }
+        // 不会被覆盖
+    </script>
+</body>
+</html>
